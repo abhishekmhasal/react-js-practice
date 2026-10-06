@@ -1,11 +1,11 @@
 @import "tailwindcss";
-button{
+button {
   padding: 2px;
   background-color: skyblue;
-   font-size: medium;
-   border-radius: 20px;
-   cursor: pointer;
+  font-size: medium;
+  border-radius: 20px;
+  cursor: pointer;
 }
-button:active{
+button:active {
   scale: 0.95;
 }
