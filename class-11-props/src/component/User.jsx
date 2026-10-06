@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 const User = (props) => {
-  const [follow, setFollow] = useState("Follow");
+  const [isFollowing, setIsFollowing] = useState(false);
 
   const btn = () => {
-    setFollow("Follwed");
+    setIsFollowing(!isFollowing);
   };
 
   return (
@@ -26,14 +26,14 @@ const User = (props) => {
       <p className="text-sm m-2 font-bold text-blue-500">
         {props.users.description}
       </p>
-      <p>{props.users.isFollow}</p>
 
       <button
         onClick={() => {
           btn();
         }}
         className="px-2 py-2 absolute top-3 right-3"
-      >{follow}
+      >
+        {isFollowing ? "Followed" : "Follow"}
       </button>
     </div>
   );
