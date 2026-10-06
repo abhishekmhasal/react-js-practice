@@ -1,7 +1,7 @@
-
+@import "tailwindcss";
 button{
-  padding: 10px, 20px;
-  background-color:indianred;
+  padding: 2px;
+  background-color: skyblue;
    font-size: medium;
    border-radius: 20px;
    cursor: pointer;
